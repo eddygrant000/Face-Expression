@@ -8,11 +8,11 @@ import random, sys, time
 old_data = dict()
 starting_time = time.time()
 
-detection_file_model = 'haarcascades/haarcascade_frontalface_default.xml'
+detection_file_model = 'haarcascade_frontalface_default.xml'
 allemotions = ["angry" ,"disgust", "scared", "happy", "sad", "surprised", "neutral"]
 detect_face = cv2.CascadeClassifier(detection_file_model)
 #emotion_file_model = 'models/_mini_XCEPTION.106-0.65.hdf5'
-emotion_file_model = 'models/_mini_XCEPTION.106-0.65.hdf5'
+emotion_file_model = '_mini_XCEPTION.106-0.65.hdf5'
 classifier_emoation = load_model(emotion_file_model, compile=False)
 cv2.namedWindow('Capture Your Face')
 camera = cv2.VideoCapture(0)
